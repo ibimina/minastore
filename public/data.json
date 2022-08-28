@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "bodyproduct": "cheek",
+      "image": "./images/icon-arrow-down.svg",
+      "subproduct": [
+        { "name": "blush", "images": "./images/blush.jpg" },
+        { "name": "bronzer", "images": "./images/bronzer.webp" }
+      ]
+    },
+    {
+      "bodyproduct": "eyes",
+      "image": "./images/icon-arrow-down.svg",
+      "subproduct": [
+        { "name": "eyebrow", "images": "./images/eyepencil.jpg" },
+        { "name": "eyeliner", "images": "./images/eyeliner.jpg" },
+        { "name": "eyeshadow", "images": "./images/eyeshadow.webp" },
+        { "name": "masscara", "images": "./images/masscara.jpg" }
+      ]
+    },
+     {
+       "bodyproduct": "face",
+       "image": "./images/icon-arrow-down.svg",
+       "subproduct": [
+         { "name": "foundation", "images": "./images/foundation.jpg" }
+       ]
+     },
+     {
+       "bodyproduct": "lips",
+       "image": "./images/icon-arrow-down.svg",
+       "subproduct": [
+         { "name": "lip liner", "images": "./images/lipliner.jpg" },
+           { "name": "lipstick", "images": "./images/lipstick.jpg" }
+       ]
+     },
+      {
+        "bodyproduct": "nail",
+        "image": "./images/icon-arrow-down.svg",
+        "subproduct": [
+          { "name": "nail polish", "images": "./images/nailpolish.png" }
+        ]
+      }
+  ]
+}
