@@ -1,12 +1,10 @@
-
-
 ## Minastore
-
 
 An e-commerce application used to purchase cosmetics from different brands based on user preference, built with React, Redux, JavaScript, and CSS.
 
 ## Project Status
-0%
+
+10%
 
 #### Example:
 
@@ -14,7 +12,7 @@ This project is currently in development. Users can filter tweets by username an
 
 ## Project Screen Shot(s)
 
-#### Example:   
+#### Example:
 
 [ PRETEND SCREEN SHOT IS HERE ]
 
@@ -22,43 +20,46 @@ This project is currently in development. Users can filter tweets by username an
 
 ## Installation and Setup Instructions
 
-#### Example:  
+#### Example:
 
-Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.
 
 Installation:
 
-`npm install`  
- 
+`npm install`
+
 To Start Server:
 
-`npm start`  
+`npm start`
 
 To Visit App:
 
-`localhost:3000/`  
+`localhost:3000/`
 
 ## Reflection
 
-  - What was the context for this project? 
-    
-     A side project
-  
-  - What do you set out to build?
+- What was the context for this project?
 
- A cosmetics e-commerce store that dislpays products and adds items to cart ,displays cart content and checkout
-  
-  - Why was this project challenging and therefore a really good learning experience?
+  A side project
 
-In progress...
+- What do you set out to build?
 
-  - What were some unexpected obstacles?
+A cosmetics e-commerce store that dislpays products and adds items to cart ,displays cart content and checkout
+
+- Why was this project challenging and therefore a really good learning experience?
 
 In progress...
 
-  - What tools did you use to implement this project?
-      create-react-app
-      react-router-dom
-      firebase
+- What were some unexpected obstacles?
 
-#### Example:  
+How display a large list of data from RESTFUL API to and avoid list-related performance issues
+How to display a sub navigation when an element is click
+
+In progress...
+
+- What tools did you use to implement this project?
+  create-react-app
+  react-router-dom
+  firebase
+
+#### Example:
