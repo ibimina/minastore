@@ -1,0 +1,26 @@
+.list{
+    margin-bottom: 1em;
+}
+.arrow[aria-pressed="true"]{
+  transform: rotate(180deg);
+}
+.part{
+  display: none;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  max-width: 300px;
+  margin: auto;
+}
+.part[data-visible="true"]
+ {
+  display: grid;
+}
+.part figure {
+  text-align: center;
+}
+.part figure img {
+  max-height: 100px;
+  display: inline;
+}

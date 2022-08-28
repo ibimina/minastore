@@ -1,0 +1,17 @@
+.prod{
+  padding: 1em;
+}
+.collections {
+ 
+  padding: 2em;
+  list-style: none;
+}
+.container {
+  display: flex;
+  align-items: baseline;
+  max-width: 70px;
+  justify-content: space-between;
+
+}
+
+

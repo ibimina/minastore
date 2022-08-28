@@ -1,0 +1,21 @@
+.hero {
+  background-image: url("../../../public/images/heroo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+}
+.hero-text{
+    position: absolute;
+    left: 9rem;
+    color: hsl(0,0%,99%);
+    text-transform: capitalize;
+    top: 10rem;
+}
+.ranks{
+    display: flex;
+}
+.product-listcon{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
