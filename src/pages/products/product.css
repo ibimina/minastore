@@ -1,10 +1,11 @@
-.list{
-    margin-bottom: 1em;
+.list {
+  margin-bottom: 1em;
+    text-transform: capitalize;
 }
-.arrow[aria-pressed="true"]{
+.arrow[aria-pressed="true"] {
   transform: rotate(180deg);
 }
-.part{
+.part {
   display: none;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
@@ -12,9 +13,10 @@
   list-style: none;
   max-width: 300px;
   margin: auto;
+  gap: 1em;
+
 }
-.part[data-visible="true"]
- {
+.part[data-visible="true"] {
   display: grid;
 }
 .part figure {
@@ -23,4 +25,16 @@
 .part figure img {
   max-height: 100px;
   display: inline;
+}
+.prodimg-con {
+  background-color: hsl(0, 87%, 76%);
+  padding: .5em ;
+  border-radius: 10px;
+}
+.prodimg-con:hover{
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.sub-img {
+  border-radius: 50%;
+
 }
