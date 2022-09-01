@@ -29,7 +29,7 @@
        "bodyproduct": "lips",
        "image": "./images/icon-arrow-down.svg",
        "subproduct": [
-         { "name": "lip liner", "images": "./images/lipliner.jpg" },
+         { "name": "lipliner", "images": "./images/lipliner.jpg" },
            { "name": "lipstick", "images": "./images/lipstick.jpg" }
        ]
      },
@@ -37,7 +37,7 @@
         "bodyproduct": "nail",
         "image": "./images/icon-arrow-down.svg",
         "subproduct": [
-          { "name": "nail polish", "images": "./images/nailpolish.png" }
+          { "name": "nailpolish", "images": "./images/nailpolish.png" }
         ]
       }
   ]
