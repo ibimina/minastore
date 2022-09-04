@@ -2,8 +2,8 @@
   min-height: 70vh;
   margin: 1em;
 }
-.cart-title{
-  margin-bottom: .5em;
+.cart-title {
+  margin-bottom: 0.5em;
 }
 .cart-con {
   display: grid;
@@ -30,7 +30,7 @@
 .na-co {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1em ;
+  margin-bottom: 1em;
 }
 
 .error-msgg {
@@ -57,8 +57,27 @@
 }
 .total {
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 1em;
+}
+.checkout{
+  margin-bottom: 1em;
+}
+.sub {
+  display: flex;
+  justify-content: space-between;
+}
+.ship-link {
+  background-color: hsl(240, 41%, 75%);
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5em;
+  text-transform: uppercase;
+}
+.card-type{
+  text-align: center;
 }
 @media (min-width: 40rem) {
   .flexx {
