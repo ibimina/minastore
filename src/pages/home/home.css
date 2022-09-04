@@ -85,7 +85,7 @@
   }
 }
 .error{
-  max-width: 200px;
+  max-width: 50px;
   margin: auto;
   transform: rotate(90deg);
 }
