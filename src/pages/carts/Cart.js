@@ -25,7 +25,7 @@ export default function Cart() {
         return a + b;
       });
 
-      setGrandTotal(grandtotal);
+      setGrandTotal(grandtotal.toFixed(2));
     }
   }, []);
 
@@ -172,22 +172,20 @@ export default function Cart() {
               {/* <div> */}
               <p className="productname">{cart.name}</p>
 
-             
-                <div className="na-co">
-                  <p className="productamount">${cart.price}</p>
+              <div className="na-co">
+                <p className="productamount">${cart.price}</p>
 
-                  <div className="shades-con">
-                    <button
-                      style={{ backgroundColor: cart.color }}
-                      className="shades"
-                    >
-                      <span className="sr-only">
-                        {cart.colorname} shades of {cart.name}
-                      </span>
-                    </button>
-                    <p>{cart.colorname}</p>
-                  </div>
-                
+                <div className="shades-con">
+                  <button
+                    style={{ backgroundColor: cart.color }}
+                    className="shades"
+                  >
+                    <span className="sr-only">
+                      {cart.colorname} shades of {cart.name}
+                    </span>
+                  </button>
+                  <p>{cart.colorname}</p>
+                </div>
               </div>
               <p className="total">
                 <span>
@@ -216,19 +214,22 @@ export default function Cart() {
           </li>
         ))}
         <div className="checkout">
-          <div>
+          <div className="sub subtitaltotal">
             <p> subtotal </p>
-            <p>${grandTotal.toFixed(2)}</p>
+            <p>${grandTotal}</p>
           </div>
-          <div>
+          <div className="sub shipping">
             <p>shipping</p>
             <p>calulated on checkout</p>
           </div>
         </div>
-        {/* <Link></Link> */}
-        <button>checkout link to shiping page</button>
-        <p>we accept</p>
-        <div>ico of master card visa verve card</div>
+        <Link to="/shipping" className="ship-link">
+          checkout
+        </Link>
+        <div className="card-type">
+          <p>we accept</p>
+          <div>ico of master card visa verve card</div>
+        </div>
       </div>
     </>
   );
