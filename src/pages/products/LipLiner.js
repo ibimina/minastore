@@ -1,27 +1,32 @@
+//react imports
 import { useState } from "react";
+
+//fetch hook
 import { useFetch } from "../../hooks/useFetch";
+
+//components
 import ProductList from "../home/ProductList";
 import Filter from "../../components/Filter";
-import Goback from "../../components/Goback";
+import Error from "../../components/Error";
+import Loading from "../../components/Loading";
+
 export default function LipLiner() {
+  
   const [url, setUrl] = useState(
-    "https://makeup-api.herokuapp.com/api/v1/products.json?product_type=lipliner"
+    "https://makeup-api.herokuapp.com/api/v1/products.json?product_type=lip liner"
   );
   const { documents, isPending, error } = useFetch(url);
 
-    const handleChange = (e) => {
-      e.preventDefault();
-      setUrl(url + "&brand=" + e.target.brand.value);
-    };
-  return (
-    <div>
-     <Goback/>
-      <form onSubmit={(e) => handleChange(e)}>
-        <Filter type={"lipliner"} />
-      </form>
+  const handleChange = (e) => {
+    e.preventDefault();
+    setUrl(url + "&brand=" + e.target.brand.value);
+  };
 
-      {error && <>error...</>}
-      {isPending && <>loading...</>}
+  return (
+    <div className="con">
+      <Filter type={"lipliner"} handleChange={handleChange} />
+      {error && <Error />}
+      {isPending && <Loading />}
       {documents && <ProductList documents={documents} />}
     </div>
   );
