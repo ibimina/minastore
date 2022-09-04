@@ -17,6 +17,8 @@ import LipStick from "./pages/products/LipStick";
 import LipLiner from "./pages/products/LipLiner";
 import NailPolish from "./pages/products/NailPolish";
 import Cart from "./pages/carts/Cart";
+import Shipping from "./pages/shipping/Shipping"
+import Payment from "./pages/shipping/Payment";
 
 function App() {
   return (
@@ -39,9 +41,11 @@ function App() {
           <Route path="/products/lipstick" element={<LipStick />} />
           <Route path="/products/nailpolish" element={<NailPolish />} />
           <Route path="/products/:id" element={<Description />} />
-
+          <Route path="/shippping" element={<Shipping />} />
+          <Route path="/payment" element={<Payment />} />
           <Route path="*" element={<Home />} />
         </Routes>
+
         <Footer />
       </BrowserRouter>
     </div>
