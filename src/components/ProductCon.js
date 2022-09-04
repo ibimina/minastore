@@ -8,24 +8,31 @@ export default function ProductCon({
   ratings,
   productid,
   category,
+  tag
 }) {
-  // console.log(category)
+
   return (
-    <Link to={`/products/${productid}`}>
+    <Link to={`/products/${productid}`} className="link top">
       <figure>
-        <img src={imageSrc} alt={`${productname}`} />
+        <img src={imageSrc} alt={`${productname}`} className="productimg" />
       </figure>
-      <p className="productname">{category}</p>
-      <p className="productname">{productname}</p>
-      <p className="productamount">
-        {productamount === "0.0" ? "3.5" : productamount}
-      </p>
-      <div className="ratings">
-        <span>{ratings === null ? "0" : ratings}</span>
-        <img
-          src={process.env.PUBLIC_URL + "/images/star.png"}
-          alt="product star ratings icon"
-        />
+      <div className="details">
+        <p className="productname"> {category}</p>
+        <p className="productname">{productname}</p>
+        <div className="price-con">
+          <p className="productamount">
+            {productamount === "0.0" ? "$3.5" : "$" + productamount}
+          </p>
+          <div className="ratings">
+            <span>{ratings === null ? "0" : ratings}</span>
+            <img
+              src={process.env.PUBLIC_URL + "/images/star.png"}
+              alt="product star ratings icon"
+              className="star"
+            />
+          </div>
+        </div>
+        <p>Tags: {tag ? tag :"no tags available"}</p>
       </div>
     </Link>
   );
