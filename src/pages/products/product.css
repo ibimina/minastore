@@ -1,6 +1,6 @@
 .list {
   margin-bottom: 1em;
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 .arrow[aria-pressed="true"] {
   transform: rotate(180deg);
@@ -14,7 +14,6 @@
   max-width: 300px;
   margin: auto;
   gap: 1em;
-
 }
 .part[data-visible="true"] {
   display: grid;
@@ -28,13 +27,39 @@
 }
 .prodimg-con {
   background-color: hsl(0, 87%, 76%);
-  padding: .5em ;
+  padding: 0.5em;
   border-radius: 10px;
 }
-.prodimg-con:hover{
-    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+.prodimg-con:hover {
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
 }
 .sub-img {
   border-radius: 50%;
+}
 
+.con {
+  min-height: 70vh;
+  margin: 1em;
+}
+
+.brandss {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.filter {
+  border-radius: 10px;
+  border: 0;
+  background-color: palevioletred;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+}
+.fibrands {
+  display: none;
+}
+.fibrands[data-visible="true"] {
+  display: block;
+}
+
+@media (min-width: 40rem) {
 }
