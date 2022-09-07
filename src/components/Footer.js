@@ -45,7 +45,7 @@ export default function Footer() {
           </ul>
         </li>
       </ul>
-      <div className="social">
+      <div className="flex social">
         <Link to="/cart">
           <img
             src={process.env.PUBLIC_URL + "/images/icon-facebook.svg"}
