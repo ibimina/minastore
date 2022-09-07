@@ -24,6 +24,7 @@ export default function Bronzer() {
 
   return (
     <div className="con">
+      <h2 className="top-text">Bronzer</h2>
       <Filter type={"bronzer"} handleChange={handleChange} />
       {error && <Error />}
       {isPending && <Loading />}

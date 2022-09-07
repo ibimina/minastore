@@ -22,10 +22,9 @@ export default function NailPolish() {
 
   return (
     <div className="con">
-     
- 
-        <Filter type={"nail polish"} handleChange={handleChange} />
-    
+      <h2 className="top-text">NailPolish</h2>
+      <Filter type={"nail polish"} handleChange={handleChange} />
+
       {error && <Error />}
       {isPending && <Loading />}
       {documents && <ProductList documents={documents} />}

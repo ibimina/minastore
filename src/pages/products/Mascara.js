@@ -23,6 +23,7 @@ export default function Mascara() {
 
   return (
     <div className="con">
+      <h2 className="top-text">Mascara</h2>
       <Filter type={"blush"} handleChange={handleChange} />
 
       {error && <Error />}

@@ -24,6 +24,7 @@ export default function LipLiner() {
 
   return (
     <div className="con">
+      <h2 className="top-text">LipLiner</h2>
       <Filter type={"lipliner"} handleChange={handleChange} />
       {error && <Error />}
       {isPending && <Loading />}

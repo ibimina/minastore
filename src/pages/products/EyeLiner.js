@@ -22,6 +22,7 @@ export default function EyeLiner() {
 
   return (
     <div className="con">
+      <h2 className="top-text">EyeLiner</h2>
       <Filter type={"eyeliner"} handleChange={handleChange} />
       {error && <Error />}
       {isPending && <Loading />}

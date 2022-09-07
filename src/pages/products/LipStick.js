@@ -24,6 +24,7 @@ export default function LipStick() {
 
   return (
     <div className="con">
+      <h2 className="top-text">Lipstick</h2>
       <Filter type={"blush"} handleChange={handleChange} />
 
       {error && <Error />}

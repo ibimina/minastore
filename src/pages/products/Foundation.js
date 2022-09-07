@@ -24,8 +24,8 @@ export default function Foundation() {
 
   return (
     <div className="con">
+      <h2 className="top-text">Foundation</h2>
       <Filter type={"foundation"} handleChange={handleChange} />
-
       {error && <Error />}
       {isPending && <Loading />}
       {documents && <ProductList documents={documents} />}

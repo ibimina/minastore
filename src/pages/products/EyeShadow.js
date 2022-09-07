@@ -24,6 +24,7 @@ export default function Eyeshadow() {
 
   return (
     <div className="con">
+      <h2 className="top-text">EyeShadow</h2>
       <Filter type={"eyeshadow"} handleChange={handleChange} />
 
       {error && <Error />}

@@ -24,6 +24,7 @@ export default function EyeBrow() {
 
   return (
     <div className="con">
+      <h2 className="top-text">Eyebrow</h2>
       <Filter type={"eyebrow"} handleChange={handleChange} />
       {error && <Error />}
       {isPending && <Loading />}

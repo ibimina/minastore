@@ -25,10 +25,11 @@ export default function Blush() {
 
   return (
     <div className="con">
+      <h2 className="top-text">Blush</h2>
       <Filter type={"blush"} handleChange={handleChange} />
       {error && <Error />}
       {isPending && <Loading />}
-      {documents && <ProductList documents={documents} />}
+      {documents && <ProductList documents={documents}  />}
     </div>
   );
 }
