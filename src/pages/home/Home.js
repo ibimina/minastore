@@ -1,26 +1,20 @@
 //style
 import "./home.css";
 
-//home components
-import TopSection from "./TopSection";
-import BestDealSec from "./BestDealSec";
-
-
 import About from "../About";
+import Section from "../../components/Section";
 
 export default function Home() {
- 
 
   return (
     <>
-  
       <div className="home-container">
         <div className="hero">
           <h1 className="hero-text">beauty shop</h1>
         </div>
         <div className="content">
-          <TopSection />
-          <BestDealSec />
+          <Section q="rating_greater_than=4" title="Top ranks"/>
+          <Section q="price_less_than=5&price_greater_than=0" title="Best Deals"/>
           <About />
         </div>
       </div>
