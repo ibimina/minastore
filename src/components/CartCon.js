@@ -1,10 +1,9 @@
-import { useEffect, useState } from "react";
-import { useCart } from "../hooks/useCart";
+import { useState } from "react";
+import { useItem } from "../hooks/useItem";
 
 export default function CartCon({ id, name, price, image, color,colorname }) {
   const [quan, setQuan] = useState(0);
-  let [addCart, setAddCart] = useState([]);
-const {dispatch}=useCart()
+
   const item = {
     id,
     color,
@@ -15,55 +14,17 @@ const {dispatch}=useCart()
     colorname
   };
  
-
-  useEffect(() => {
-    let localcart = localStorage.getItem("addcart");
-    localcart = JSON.parse(localcart);
-
-    if (localcart) {
-      setAddCart(localcart);
-    }
-  }, []);
-  // console.log(addCart);
-
-  const addItem = () => {
-let cartCopy = [...addCart];
-    let existing = cartCopy.find(cartItem=> cartItem.id === id && cartItem.color === color);
-    if (existing) {
-      existing.quantity += item.quantity;
-    } else {
-      cartCopy.push(item);
-    }
-    setAddCart(cartCopy);
-    let ee=[]
-     cartCopy.forEach((element) => ee.push(element.quantity));
-    let min = JSON.stringify(cartCopy);
-    localStorage.setItem("addcart", min);
-
-  let rr=  ee.reduce((a,b)=>a+b)
-  console.log(rr)
-
-let minn = JSON.stringify(rr);
-localStorage.setItem("quantity", minn);
- dispatch({ type: "ADD_ITEM", payload: rr });
- 
- document.querySelector(".aded").style.display = "block";
-const interval = setTimeout(() => {
-   document.querySelector(".aded").style.display = "none";
-}, 500);
- return () => clearInterval(interval);
-  };
- 
+const {addItem}=useItem()
 
   return (
     <div className="addprod-con">
       <div className="quantity-con">
-        <button className="plus ops-btn" onClick={() => setQuan(quan + 1)}>
+        <button className="plus ops-btn fill" onClick={() => setQuan(quan + 1)}>
           <span className="sr-only">plus</span>
         </button>
         <p className="prod-quantity">{quan}</p>{" "}
         <button
-          className="minus ops-btn"
+          className="minus ops-btn fill"
           onClick={() => (quan > 0 ? setQuan(quan - 1) : setQuan(0))}
         >
           <span className="sr-only">minus</span>
@@ -76,7 +37,7 @@ const interval = setTimeout(() => {
           <img
             src={process.env.PUBLIC_URL + "/images/icon-cart.svg"}
             alt="cart icon"
-            className="cart-icon"
+            className="add-icon"
           />
           <span>Add to cart</span>{" "}
         </button>
@@ -84,12 +45,12 @@ const interval = setTimeout(() => {
       {quan > 0 && (
         <div className="add-con">
         <p className="aded">added to cart</p>
-          <button className="addcart" onClick={addItem}>
+          <button className="addcart" onClick={()=>addItem(item,id,color)}>
             {" "}
             <img
               src={process.env.PUBLIC_URL + "/images/icon-cart.svg"}
               alt="cart icon"
-              className="cart-icon"
+              className="add-icon"
             />
             <span>Add to cart</span>
           </button>
