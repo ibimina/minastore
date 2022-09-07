@@ -4,7 +4,7 @@
       "bodyproduct": "cheek",
       "image": "./images/icon-arrow-down.svg",
       "subproduct": [
-        { "name": "blush", "images": "./images/blush.jpg" },
+        { "name": "blush", "images": "./images/blush.webp" },
         { "name": "bronzer", "images": "./images/bronzer.webp" }
       ]
     },
@@ -12,25 +12,25 @@
       "bodyproduct": "eyes",
       "image": "./images/icon-arrow-down.svg",
       "subproduct": [
-        { "name": "eyebrow", "images": "./images/eyepencil.jpg" },
-        { "name": "eyeliner", "images": "./images/eyeliner.jpg" },
+        { "name": "eyebrow", "images": "./images/eyepencil.webp" },
+        { "name": "eyeliner", "images": "./images/eyeliner.webp" },
         { "name": "eyeshadow", "images": "./images/eyeshadow.webp" },
-        { "name": "masscara", "images": "./images/masscara.jpg" }
+        { "name": "masscara", "images": "./images/masscara.webp" }
       ]
     },
      {
        "bodyproduct": "face",
        "image": "./images/icon-arrow-down.svg",
        "subproduct": [
-         { "name": "foundation", "images": "./images/foundation.jpg" }
+         { "name": "foundation", "images": "./images/foundation.webp" }
        ]
      },
      {
        "bodyproduct": "lips",
        "image": "./images/icon-arrow-down.svg",
        "subproduct": [
-         { "name": "lipliner", "images": "./images/lipliner.jpg" },
-           { "name": "lipstick", "images": "./images/lipstick.jpg" }
+         { "name": "lipliner", "images": "./images/lipliner.webp" },
+           { "name": "lipstick", "images": "./images/lipstick.webp" }
        ]
      },
       {
