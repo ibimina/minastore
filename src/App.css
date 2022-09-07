@@ -25,5 +25,22 @@ z-index: 100000;
 }
 .pro-list[data-visible="true"]{
 display: block;
-z-index: 10000000;
+z-index: 100000;
+}
+@media (min-width:60rem) {
+  
+  .pro-list{
+    background-color: transparent;
+    position: relative;
+  }
+  .collections{
+    position: absolute;
+    background-color: hsl(352, 96%, 54%);
+    top: 2rem;
+    left: -5rem;
+    border-radius: 10px;
+    width: 230px;
+    padding: 1em 3em;
+     z-index: 10000000;
+  }
 }

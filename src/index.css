@@ -32,7 +32,7 @@ body,
   width: 100%;
   min-height: 100vh;
   font-size: 16px;
-  line-height: 25px;
+  line-height: 2.2em;
   background-color: hsl(0, 100%, 99%);
 }
 .sr-only {
@@ -51,6 +51,10 @@ header {
   padding: 1.5em;
   background-color: hsl(0, 4%, 5%);
   border: 0;
+  position: fixed;
+  top: 0rem;
+  z-index: 1000;
+  width: 100%;
 }
 .logo {
   color: hsl(0, 5%, 96%);
@@ -102,9 +106,15 @@ nav li a {
 nav li a.active {
   color: palevioletred;
 }
+nav li a:hover{
+  color: hsl(0, 100%, 99%);
+}
 .cart-icon {
-  filter: brightness(100);
   cursor: pointer;
+  filter: brightness(2);
+}
+.cart-icon:hover {
+  filter: brightness(1000%);
 }
 .flex {
   display: flex;
@@ -132,7 +142,7 @@ nav li a.active {
   text-transform: capitalize;
 }
 .next {
-  transform: rotate(270deg);
+  background-image: url("../public/images/icon-next.svg");
 }
 footer {
   background-color: rgb(25, 25, 29);
@@ -140,7 +150,8 @@ footer {
   padding: 1em;
 }
 footer li,
-.social-icon ,.arrow{
+.social-icon,
+.arrow {
   cursor: pointer;
 }
 .footer-ul {
@@ -184,6 +195,20 @@ footer li,
     position: relative;
     padding: 0em;
   }
+  nav[data-visible="true"] {
+    padding: 0;
+  }
+  .next {
+    transform: rotate(90deg);
+    filter: brightness(700%) invert(0);
+    margin-left: 0.5em;
+  }
+  .next:hover {
+    filter: brightness(100000%);
+  }
+  .next[aria-pressed="true"] {
+    transform: rotate(270deg);
+  }
   .bk {
     display: none;
   }
@@ -192,11 +217,10 @@ footer li,
     gap: 5em;
     width: 30%;
   }
-  .rm{
+  .rm {
     margin-bottom: 0;
     color: #fff;
   }
-
   .nav-arr,
   nav li a {
     color: #fff;

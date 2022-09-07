@@ -2,7 +2,8 @@
   padding: 1em 2em;
   text-transform: capitalize;
   min-height: 70vh;
-    position: relative;
+    padding-top: 7em;
+  position: relative;
 }
 .shipping-form {
   padding: 1em;
@@ -26,7 +27,9 @@
 .nm-in input:focus {
   outline: 1px solid black;
 }
-
+.radio{
+  cursor: pointer;
+}
 .pay-con {
   margin-bottom: 1em;
 }
@@ -63,13 +66,12 @@
 .pay-form {
   margin: 2em 0;
 }
-.ship-con {
-  /* position: relative; */
-}
 .submit-btn {
   position: absolute;
   bottom: 1rem;
   left: 50%;
+  cursor: pointer;
+  padding:.5em 1em;
 }
 @media (min-width: 40rem) {
   .ship-flex {
