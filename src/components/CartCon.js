@@ -45,15 +45,15 @@ let cartCopy = [...addCart];
 
 let minn = JSON.stringify(rr);
 localStorage.setItem("quantity", minn);
-// let er = localStorage.getItem("quantity")
  dispatch({ type: "ADD_ITEM", payload: rr });
-
+ 
+ document.querySelector(".aded").style.display = "block";
+const interval = setTimeout(() => {
+   document.querySelector(".aded").style.display = "none";
+}, 500);
+ return () => clearInterval(interval);
   };
-  //{quantity:quan,
-  //name:name
-  //id:id
-  //color:color
-  //}
+ 
 
   return (
     <div className="addprod-con">
@@ -69,12 +69,9 @@ localStorage.setItem("quantity", minn);
           <span className="sr-only">minus</span>
         </button>
       </div>
-
+     
       {!quan > 0 && (
-        <button
-          className="addcart"
-          disabled
-        >
+        <button className="addcart" disabled>
           {" "}
           <img
             src={process.env.PUBLIC_URL + "/images/icon-cart.svg"}
@@ -85,20 +82,19 @@ localStorage.setItem("quantity", minn);
         </button>
       )}
       {quan > 0 && (
-        <button
-          className="addcart"
-          onClick={addItem}
-        >
-          {" "}
-          <img
-            src={process.env.PUBLIC_URL + "/images/icon-cart.svg"}
-            alt="cart icon"
-            className="cart-icon"
-          />
-          <span>Add to cart</span>{" "}
-        </button>
+        <div className="add-con">
+        <p className="aded">added to cart</p>
+          <button className="addcart" onClick={addItem}>
+            {" "}
+            <img
+              src={process.env.PUBLIC_URL + "/images/icon-cart.svg"}
+              alt="cart icon"
+              className="cart-icon"
+            />
+            <span>Add to cart</span>
+          </button>
+        </div>
       )}
-     
     </div>
   );
 }
