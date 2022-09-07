@@ -4,6 +4,7 @@
 }
 .arrow[aria-pressed="true"] {
   transform: rotate(180deg);
+  
 }
 .part {
   display: none;
@@ -52,7 +53,8 @@
   border: 0;
   background-color: palevioletred;
   padding: 0.5em 1em;
-  margin: 0.5em;
+  margin: 0.5em auto;
+  display: block;
 }
 .fibrands {
   display: none;
@@ -61,5 +63,15 @@
   display: block;
 }
 
-@media (min-width: 40rem) {
+.ft-arrow {
+  background-image: url("../../../public/images/icon-next.svg");
+  transform: rotate(90deg);
+}
+.ft-arrow[aria-pressed="true"] {
+  transform: rotate(270deg);
+}
+@media (min-width:40rem) {
+  .brandss{
+    grid-template-columns: repeat(4,1fr);
+  }
 }

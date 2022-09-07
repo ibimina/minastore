@@ -1,0 +1,101 @@
+.ship-con {
+  padding: 1em 2em;
+  text-transform: capitalize;
+  min-height: 70vh;
+    position: relative;
+}
+.shipping-form {
+  padding: 1em;
+
+}
+.ship-flex {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+}
+.label {
+  margin-bottom: 0.3em;
+}
+.nm-in input {
+  padding: 0.5em 0;
+  border: 0;
+  padding: 1em 0;
+  border-radius: 10px;
+  background-color: hsl(332, 88%, 90%);
+}
+.nm-in input:focus {
+  outline: 1px solid black;
+}
+
+.pay-con {
+  margin-bottom: 1em;
+}
+.pay-method {
+  display: block;
+}
+.order-fl {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 1em;
+}
+.order-q {
+  display: flex;
+  justify-content: space-between;
+}
+.ship {
+  display: flex;
+  align-items: center;
+}
+.gap {
+  gap: 2em;
+}
+.ra {
+  gap: 0.2em;
+}
+.no-sp {
+  margin-bottom: 0;
+  gap: 0;
+}
+
+.first {
+  margin-bottom: 2em;
+}
+.pay-form {
+  margin: 2em 0;
+}
+.ship-con {
+  /* position: relative; */
+}
+.submit-btn {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+}
+@media (min-width: 40rem) {
+  .ship-flex {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .pae {
+    gap: 1em;
+  }
+  .nm-in {
+    flex-direction: column;
+  }
+ 
+  .cvv {
+    width: 30%;
+  }
+}
+@media (min-width: 60rem) {
+.re{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2em;
+}
+
+  .first {
+    margin-bottom: 0em;
+  }
+}

@@ -1,0 +1,26 @@
+.thanks {
+  /* position: fixed; */
+  top: 0;
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.thanks-con {
+  background-color: antiquewhite;
+  padding: 1em;
+  border-radius: 10px;
+  margin: 1em;
+}
+.t-hd{
+    margin-bottom: 1em;
+}
+.t-hm{
+    text-decoration: none;
+    background-color: palevioletred;
+    padding: .5em ;
+    border-radius: 20px;
+
+}

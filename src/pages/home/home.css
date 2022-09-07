@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+
 }
 .content {
   padding: 1em;
@@ -24,9 +24,7 @@
 .top-rank {
   margin-bottom: 1em ;
 }
-.top-text {
-  margin-bottom: 1em;
-}
+
 .ranks {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -52,8 +50,7 @@
 .link {
   text-decoration: none;
   display: grid;
-  /* grid-template-rows: 2fr 1fr; */
- 
+  cursor: pointer;
 }
 .productname {
   padding: 0.3em;
