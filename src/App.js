@@ -19,6 +19,7 @@ import NailPolish from "./pages/products/NailPolish";
 import Cart from "./pages/carts/Cart";
 import Shipping from "./pages/shipping/Shipping"
 import Payment from "./pages/shipping/Payment";
+import Thankyou from "./pages/thankyou/Thankyou";
 
 function App() {
   return (
@@ -41,8 +42,10 @@ function App() {
           <Route path="/products/lipstick" element={<LipStick />} />
           <Route path="/products/nailpolish" element={<NailPolish />} />
           <Route path="/products/:id" element={<Description />} />
-          <Route path="/shippping" element={<Shipping />} />
+          <Route path="/shipping" element={<Shipping />} />
           <Route path="/payment" element={<Payment />} />
+          <Route path="/thankyou" element={<Thankyou/>} />
+
           <Route path="*" element={<Home />} />
         </Routes>
 
