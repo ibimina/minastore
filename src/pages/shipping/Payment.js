@@ -1,32 +1,71 @@
 import React from "react";
+import { Link,  useNavigate } from "react-router-dom";
+import { useCart } from "../../hooks/useCart";
+import Order from "./Order";
 
 export default function Payment() {
-  return (
-    <div>
-      <h1>payment</h1>
+   const {
+     shippingPrices
+    
+   } = useCart()
+  const navigate = useNavigate()
+ 
+const handleSubmit =(e)=>{
+  e.preventDefault()
+  navigate("/thankyou")
+}
+console.log(shippingPrices)
 
-      <form action="">
-        <label htmlFor="">
-            <span>card number</span>
-          <input type="number" name="" id="" />
-        </label>
-        <label htmlFor="">
-            <span>Expiration date</span>
-          <input type="month" name="" id="" />
-          <input type="number" />
-        </label>
-        <label htmlFor="">
+  return (
+    <div className="ship-con">
+      <h1>payment</h1>
+      <div className="re">
+        <form className="shipping pay-form" onSubmit={handleSubmit}>
+          <div className="pay-con">
+            <label className="pay-method">
+              <input type="radio" name="payment"  />
+              <span>paypal</span>
+            </label>
+            <label className="pay-method">
+              <input type="radio" name="payment" />
+              <span>master</span>
+            </label>
+            <label className="pay-method">
+              <input type="radio" name="payment" />
+              <span>visa</span>
+            </label>
+          </div>
+          <div className="ship-flex pae">
+            <label className="ship-flex nm-in">
+              <span>card number</span>
+              <input type="number" name=""/>
+            </label>
+
+            <label className="ship-flex nm-in">
+              <span>Expiration date</span>
+              <input type="month" name=""/>
+            </label>
+          </div>
+
+          <label className="ship-flex nm-in">
             <span>Name of card holder</span>
-          <input type="text" />
-        </label>
-        <label htmlFor="">
+            <input type="text" />
+          </label>
+          <label className="ship-flex nm-in">
             <span>cvv(security code)</span>
-          <input type="text" />
-        </label>
-        <input type="submit" value="pay" />
-      </form>
-      <div>order summary</div>
-      <button>return to shipping page link</button>
+            <input type="text" className="cvv" />
+          </label>
+          <input
+            type="submit"
+            value="complete purchase"
+            className="pay submit-btn"
+          />
+        </form>
+        <div>
+          <Order shippingPrice={shippingPrices} />
+        </div>
+      </div>
+      <Link to="/shipping">return to shipping page link</Link>
     </div>
   );
 }
