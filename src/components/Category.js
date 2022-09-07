@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Category({ doc, hand, handle }) {
+export default function Category({ doc }) {
   const handleClick = (e) => {
     let arrow = e.target.parentNode;
     if (arrow.className.includes("arrow")) {
@@ -17,6 +17,7 @@ export default function Category({ doc, hand, handle }) {
     }
   };
   const handlepage = (e) => {
+
       e.target.parentNode.parentNode.parentNode.previousSibling.children[1].setAttribute(
         "aria-pressed",
         false
@@ -25,9 +26,12 @@ export default function Category({ doc, hand, handle }) {
       "data-visible",
       false
     );
-    handle();
-    hand(); 
+     document.querySelector(".next").setAttribute("aria-pressed", "false");
+     document.querySelector("nav").setAttribute("data-visible", "false");
+     document.querySelector(".mobile-navigation").setAttribute("aria-expanded", "false");
+    
   };
+
   return (
     <li className="list">
       <div className="container">
