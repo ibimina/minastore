@@ -14,7 +14,7 @@ export default function Home() {
         </div>
         <div className="content">
           <Section q="rating_greater_than=4" title="Top ranks"/>
-          <Section q="price_less_than=5&price_greater_than=0" title="Best Deals"/>
+          <Section q="price_less_than=5" title="Best Deals"/>
           <About />
         </div>
       </div>
