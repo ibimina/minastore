@@ -8,7 +8,7 @@ import { useParams } from "react-router-dom";
 import { useFetch } from "../../hooks/useFetch";
 
 // page components
-import Goback from "../../components/Goback";
+
 import Error from "../../components/Error";
 import Loading from "../../components/Loading";
 import Extras from "../../components/Extras";
@@ -22,7 +22,7 @@ export default function Description() {
   return (
     <>
       <div className="desc-con">
-        <Goback />
+   
         {error && <Error />}
         {isPending && <Loading />}
         {documents && (
