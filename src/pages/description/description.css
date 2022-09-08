@@ -90,7 +90,7 @@
   position: absolute;
   top: -1rem;
   left: 50%;
-  background-color: palevioletred;
+  background-color: hsl(0, 1%, 43%);
   padding: 0 0.5em;
 }
 .add-icon {
