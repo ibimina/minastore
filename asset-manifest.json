@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/minastore/static/css/main.8fc1c706.css",
-    "main.js": "/minastore/static/js/main.cce18355.js",
+    "main.js": "/minastore/static/js/main.ef007243.js",
     "static/media/heroo.webp": "/minastore/static/media/heroo.940d64362282ad5b4974.webp",
     "static/media/icon-delete.svg": "/minastore/static/media/icon-delete.1fd1f1f7d9f8ce5557b4.svg",
     "index.html": "/minastore/index.html",
@@ -12,10 +12,10 @@
     "static/media/icon-hamburger.svg": "/minastore/static/media/icon-hamburger.5153cb809501d4309c23.svg",
     "static/media/icon-arrow-down.svg": "/minastore/static/media/icon-arrow-down.bebf05132571af33611e.svg",
     "main.8fc1c706.css.map": "/minastore/static/css/main.8fc1c706.css.map",
-    "main.cce18355.js.map": "/minastore/static/js/main.cce18355.js.map"
+    "main.ef007243.js.map": "/minastore/static/js/main.ef007243.js.map"
   },
   "entrypoints": [
     "static/css/main.8fc1c706.css",
-    "static/js/main.cce18355.js"
+    "static/js/main.ef007243.js"
   ]
 }
