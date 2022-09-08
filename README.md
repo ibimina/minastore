@@ -4,23 +4,20 @@ An e-commerce application used to purchase cosmetics from different brands based
 
 ## Project Status
 
-10%
+95%
 
 #### Example:
 
-This project is currently in development. Users can filter tweets by username and keyword and see visual data representation. Functionality to sort by additional parameters is in progress.
+This project is currently in development. Users can filter products by brands and see visual data representation. Functionality to sort by additional parameters is in progress.
 
-## Project Screen Shot(s)
+## Project Screen Shots
 
-#### Example:
-
-[ PRETEND SCREEN SHOT IS HERE ]
-
-[ PRETEND OTHER SCREEN SHOT IS HERE ]
-
+![image](Capture122.png)
+![image](Capture125.png)
+![image](Capture126.png)
+![image](Capture127.png)
+![image](Capture128.png)
 ## Installation and Setup Instructions
-
-#### Example:
 
 Clone down this repository. You will need `node` and `npm` installed globally on your machine.
 
@@ -48,18 +45,27 @@ A cosmetics e-commerce store that dislpays products and adds items to cart ,disp
 
 - Why was this project challenging and therefore a really good learning experience?
 
-In progress...
+Desiging out the ux/ui of an e-commerce 
+
+I learnt to use some array methods which I havent used like the reduce method
+
+Saving data in using local storage
+
 
 - What were some unexpected obstacles?
 
 How display a large list of data from RESTFUL API to and avoid list-related performance issues
+
 How to display a sub navigation when an element is click
 
-In progress...
+Manipulating cart data
+
 
 - What tools did you use to implement this project?
-  create-react-app
-  react-router-dom
-  firebase
+ 
+  Create-react-app
 
-#### Example:
+  React-router-dom
+
+
+
