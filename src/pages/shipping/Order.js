@@ -27,7 +27,7 @@ export default function Order({shippingPrice}) {
   return (
     <>
       <div>
-        <p>Your order</p>
+        <h1 className="pay-con">Your order</h1>
         {order.map((cart, index) => (
           <li key={index} className="order-con">
             <div className="order-fl">
@@ -74,7 +74,7 @@ export default function Order({shippingPrice}) {
       </div>
       <div className="sub subtitaltotal">
         <p>Total</p>
-        <p>${(subTotal + Number(shippingPrice))}</p>
+        <p>${(Number(subTotal) + Number(shippingPrice))}</p>
       </div>
     </>
   );

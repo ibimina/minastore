@@ -3,14 +3,14 @@ import ProductCon from "../../components/ProductCon";
 
 
 
-export default function ProductList({documents}) {
+export default function ProductList({documents,title}) {
 const fetchData=()=>{
  return documents
 }
 
   return (
     <section className="product-list">
-      <h2 className="top-text">Product list</h2>
+      <h2 className="top-text top-rank">{title}</h2>
       <InfiniteScroll
         dataLength={documents.length}
         next={fetchData}
