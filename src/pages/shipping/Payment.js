@@ -27,33 +27,32 @@ console.log(shippingPrices)
               <span>paypal</span>
             </label>
             <label className="pay-method">
-              <input type="radio" name="payment" className="radio" />
+              <input type="radio" name="payment" className="radio" required/>
               <span>master</span>
             </label>
             <label className="pay-method">
-              <input type="radio" name="payment" className="radio" />
+              <input type="radio" name="payment" className="radio" required/>
               <span>visa</span>
             </label>
           </div>
           <div className="ship-flex pae">
             <label className="ship-flex nm-in">
               <span>card number</span>
-              <input type="number" name="" />
+              <input type="number" name="" required/>
             </label>
 
             <label className="ship-flex nm-in">
               <span>Expiration date</span>
-              <input type="month" name="" />
+              <input type="month" name="" required/>
             </label>
           </div>
-
           <label className="ship-flex nm-in">
             <span>Name of card holder</span>
-            <input type="text" />
+            <input type="text" required/>
           </label>
           <label className="ship-flex nm-in">
             <span>cvv(security code)</span>
-            <input type="text" className="cvv" />
+            <input type="text" className="cvv" required/>
           </label>
           <input
             type="submit"
@@ -61,9 +60,7 @@ console.log(shippingPrices)
             className="pay submit-btn"
           />
         </form>
-  
           <Order shippingPrice={shippingPrices} />
-   
       </div>
       <Link to="/shipping">return to shipping page link</Link>
     </div>
