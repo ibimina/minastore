@@ -32,7 +32,7 @@ export default function ProductCon({
             />
           </div>
         </div>
-        <p>Tags: {tag ? tag :"no tags available"}</p>
+        <p className="tag">Tags: {tag ? tag :"no tags available"}</p>
       </div>
     </Link>
   );
