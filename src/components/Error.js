@@ -5,7 +5,7 @@ export default function Error() {
     <>
       <p className="error-msg">Ooops server down</p>
       <Image
-        imageSrc={process.env.PUBLIC_URL + "/images/error.png"}
+        imageSrc={process.env.PUBLIC_URL + "/images/error.webp"}
         alt="error icon"
         className="error"
       />
