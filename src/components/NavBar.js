@@ -16,7 +16,7 @@ export default function NavBar() {
   const [visible, setVisible] = useState("false");
   const { quantity, dispatch } = useCart();
   let localcart = localStorage.getItem("quantity");
-  // dispatch({ type: "ADD_ITEM", payload: localcart });
+  
   useEffect(() => {
     // if (localcart) {
     dispatch({ type: "ADD_ITEM", payload: localcart });
@@ -33,12 +33,14 @@ export default function NavBar() {
     }
   };
   const handleVisi = () => {
+
     if (visible === "false") {
       setVisible("true");
       document.querySelector(".next").setAttribute("aria-pressed", "true");
     } else if (visible === "true") {
-      setVisible("false");
       document.querySelector(".next").setAttribute("aria-pressed", "false");
+      setVisible("false");
+     
     }
   };
   return (
@@ -51,12 +53,13 @@ export default function NavBar() {
               <NavLink to="/"> home</NavLink>
             </li>
             <li className="nav-arr">
-              products{" "}
+              products
               <button
                 onClick={handleVisi}
                 className="next ops-btn"
-                aria-pressed="false">
-                    <span className="sr-only">product menu</span>
+                aria-pressed="false"
+              >
+                <span className="sr-only">product menu</span>
               </button>
               <ProductsNav visi={visible} handleVisi={handleVisi} />
             </li>
