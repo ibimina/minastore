@@ -9,7 +9,7 @@ export default function CartCon({ id, name, price, image, color,colorname }) {
     color,
     quantity: quan,
     image,
-    price,
+    price :price === "0.0" ?"3.5":price,
     name,
     colorname
   };
