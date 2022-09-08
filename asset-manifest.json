@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/minastore/static/css/main.cb09820a.css",
-    "main.js": "/minastore/static/js/main.6a1f4e5f.js",
+    "main.css": "/minastore/static/css/main.8fc1c706.css",
+    "main.js": "/minastore/static/js/main.a03a324d.js",
     "static/media/heroo.webp": "/minastore/static/media/heroo.940d64362282ad5b4974.webp",
     "static/media/icon-delete.svg": "/minastore/static/media/icon-delete.1fd1f1f7d9f8ce5557b4.svg",
     "index.html": "/minastore/index.html",
@@ -11,11 +11,11 @@
     "static/media/icon-next.svg": "/minastore/static/media/icon-next.9621183a551a9985b4bd.svg",
     "static/media/icon-hamburger.svg": "/minastore/static/media/icon-hamburger.5153cb809501d4309c23.svg",
     "static/media/icon-arrow-down.svg": "/minastore/static/media/icon-arrow-down.bebf05132571af33611e.svg",
-    "main.cb09820a.css.map": "/minastore/static/css/main.cb09820a.css.map",
-    "main.6a1f4e5f.js.map": "/minastore/static/js/main.6a1f4e5f.js.map"
+    "main.8fc1c706.css.map": "/minastore/static/css/main.8fc1c706.css.map",
+    "main.a03a324d.js.map": "/minastore/static/js/main.a03a324d.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb09820a.css",
-    "static/js/main.6a1f4e5f.js"
+    "static/css/main.8fc1c706.css",
+    "static/js/main.a03a324d.js"
   ]
 }
