@@ -107,7 +107,7 @@ export const useItem = () => {
     localStorage.setItem("addcart", min);
 
     let rr = ee.reduce((a, b) => a + b);
-    console.log(ee);
+
 
     let minn = JSON.stringify(rr);
     localStorage.setItem("quantity", minn);
