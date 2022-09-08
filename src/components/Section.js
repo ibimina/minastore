@@ -6,7 +6,7 @@ import ProductCon from './ProductCon';
 
 export default function Section({q,title}) {
       const query =
-        "http://makeup-api.herokuapp.com/api/v1/products.json?"+q;
+        "https://makeup-api.herokuapp.com/api/v1/products.json?"+q;
       const { documents, isPending, error } = useFetch(query);
 
       if (documents === null) {
