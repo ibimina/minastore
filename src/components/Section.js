@@ -21,7 +21,7 @@ export default function Section({q,title}) {
       <div className="ranks">
         {documents &&
           documents
-            .slice(0, 4)
+            .slice(0, 12)
             .map((doc) => (
               <ProductCon
                 key={doc.id}
