@@ -7,7 +7,7 @@ import { useFetch } from "../hooks/useFetch";
 
 import "../../src/pages/products/product.css"
 
-export default function ProductsNav({visi,handleVisi}) {
+export default function ProductsNav({visi}) {
  
   const path = "./data.json";
   const { documents, isPending, error } = useFetch(path);
