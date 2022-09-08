@@ -23,27 +23,27 @@ console.log(shippingPrices)
         <form className="shipping pay-form" onSubmit={handleSubmit}>
           <div className="pay-con">
             <label className="pay-method">
-              <input type="radio" name="payment"  />
+              <input type="radio" name="payment" className="radio" />
               <span>paypal</span>
             </label>
             <label className="pay-method">
-              <input type="radio" name="payment" />
+              <input type="radio" name="payment" className="radio" />
               <span>master</span>
             </label>
             <label className="pay-method">
-              <input type="radio" name="payment" />
+              <input type="radio" name="payment" className="radio" />
               <span>visa</span>
             </label>
           </div>
           <div className="ship-flex pae">
             <label className="ship-flex nm-in">
               <span>card number</span>
-              <input type="number" name=""/>
+              <input type="number" name="" />
             </label>
 
             <label className="ship-flex nm-in">
               <span>Expiration date</span>
-              <input type="month" name=""/>
+              <input type="month" name="" />
             </label>
           </div>
 
