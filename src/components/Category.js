@@ -17,19 +17,19 @@ export default function Category({ doc }) {
     }
   };
   const handlepage = (e) => {
-
-      e.target.parentNode.parentNode.parentNode.previousSibling.children[1].setAttribute(
-        "aria-pressed",
-        false
-      );
+    e.target.parentNode.parentNode.parentNode.previousSibling.children[1].setAttribute(
+      "aria-pressed",
+      false
+    );
     e.target.parentNode.parentNode.parentNode.setAttribute(
       "data-visible",
       false
     );
-     document.querySelector(".next").setAttribute("aria-pressed", "false");
-     document.querySelector("nav").setAttribute("data-visible", "false");
-     document.querySelector(".mobile-navigation").setAttribute("aria-expanded", "false");
-    
+    document.querySelector(".next").setAttribute("aria-pressed", "false");
+    document.querySelector("nav").setAttribute("data-visible", "false");
+    document
+      .querySelector(".mobile-navigation")
+      .setAttribute("aria-expanded", "false");
   };
 
   return (
@@ -66,4 +66,3 @@ export default function Category({ doc }) {
     </li>
   );
 }
-
