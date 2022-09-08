@@ -14,7 +14,7 @@ export default function GetColors({ documents, id }) {
   return (
     <>
       <p> {documents.name}</p>
-      <p> ${documents.price === "0.0" ? 2 : documents.price}</p>
+      <p> ${documents.price === "0.0" ? 3.5 : documents.price}</p>
       <GetStars documents={documents} />
       <p>colors:</p>
       <div className="color-con">
