@@ -61,9 +61,9 @@ console.log(shippingPrices)
             className="pay submit-btn"
           />
         </form>
-        <div>
+  
           <Order shippingPrice={shippingPrices} />
-        </div>
+   
       </div>
       <Link to="/shipping">return to shipping page link</Link>
     </div>
