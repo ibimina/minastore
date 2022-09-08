@@ -14,7 +14,7 @@ export default function Extras({producttype}) {
     <>
     {error && <Error/>}
     {isPending && <Loading/>}
-    {documents && <ProductList documents={documents}/>}
+    {documents && <ProductList documents={documents} title="You may also like"/>}
     </>
   )
 }
