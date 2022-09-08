@@ -40,7 +40,7 @@ const {cartt,grandTotal}=useItem()
                       <span className="quant">
                         Price{" "}
                         <span className="item-total">
-                          $ {(cart.price * cart.quantity).toFixed(2)}{" "}
+                          ${(cart.price * cart.quantity).toFixed(2)}{" "}
                         </span>{" "}
                       </span>
                     </p>
