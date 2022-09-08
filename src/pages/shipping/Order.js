@@ -35,24 +35,26 @@ export default function Order({shippingPrice}) {
               <div>
                 <p className="productname">{cart.name}</p>
                 <div className="shades-con">
-                  <p>color:</p>
                   <button
                     style={{ backgroundColor: cart.color }}
                     className="shades"
                   >
                     <span className="sr-only">
-                      {cart.colorname} shades of {cart.name}
+                      {cart.colorname} shade of {cart.name}
                     </span>
                   </button>
                   <p> {cart.colorname}</p>
                 </div>
                 <div className="order-q">
-                  <p className="total no-sp">
+                  <p className="total no-sp quant">
                     quantity: <span>{cart.quantity}</span>
                   </p>
                   <p className="total no-sp">
-                    <span>
-                      Price ${(cart.price * cart.quantity).toFixed(2)}
+                    <span className="quant">
+                      Price{" "}
+                      <span className="item-total">
+                        $ {(cart.price * cart.quantity).toFixed(2)}{" "}
+                      </span>{" "}
                     </span>
                   </p>
                 </div>
@@ -65,16 +67,16 @@ export default function Order({shippingPrice}) {
       <h1 className="cart-title">total</h1>
 
       <div className="sub subtitaltotal">
-        <p> subtotal </p>
-        <p>${subTotal}</p>
+        <p className="quant"> subtotal </p>
+        <p className="bold">${subTotal}</p>
       </div>
       <div className="sub subtitaltotal">
-        <p>shipping</p>
-        <p>${shippingPrice}</p>
+        <p className="quant">shipping</p>
+        <p className="bold">${shippingPrice}</p>
       </div>
       <div className="sub subtitaltotal">
-        <p>Total</p>
-        <p>${(Number(subTotal) + Number(shippingPrice))}</p>
+        <p className="quant">Total</p>
+        <p className="bold">${Number(subTotal) + Number(shippingPrice)}</p>
       </div>
     </>
   );

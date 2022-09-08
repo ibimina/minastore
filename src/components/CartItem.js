@@ -23,9 +23,11 @@ export default function CartItem({cart,index,editItem,removeItem,deleteItem}) {
         </div>
         <p className="total">
           <span>
-            Total: ${cart.price}x {cart.quantity}
+            Total: <span className='price'> ${cart.price} </span> x <span className='quant'> {cart.quantity} </span>
           </span>
-          <span>${(cart.price * cart.quantity).toFixed(2)}</span>
+          <span className="item-total">
+            ${(cart.price * cart.quantity).toFixed(2)}
+          </span>
         </p>
         <div className="dele-add">
           <AddItem

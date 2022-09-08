@@ -25,7 +25,7 @@ export default function Shipping() {
   return (
     <div className="ship-con">
       <div className="re">
-        <form className="shipping form" onSubmit={handleSubmit}>
+        <form className="shipping form top-rank" onSubmit={handleSubmit}>
           <h1 className="pay-con">contact information</h1>
           <div className="ship-flex pae">
             <Label
