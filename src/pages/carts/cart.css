@@ -33,6 +33,7 @@
 
 .na-co {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 1em;
 }
@@ -105,7 +106,16 @@ max-width: 50px;
 }
 .total-con{
   text-transform: capitalize;
-
+}
+.item-total{
+  color: hsl(0, 96%, 69%);
+  font-weight: 600;
+}
+.price{
+  color: hsl(0, 5%, 68%);
+}
+.quant{
+  color: hsl(0, 0%, 62%);
 }
 @media (min-width: 40rem) {
   .flexx {
@@ -119,8 +129,8 @@ max-width: 50px;
     align-items: center;
   }
   .na-co {
+    flex-direction: row;
     margin: 0;
-    width: 50%;
     justify-content: space-between;
   }
   .red {

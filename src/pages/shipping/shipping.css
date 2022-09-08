@@ -72,6 +72,15 @@
   left: 50%;
   cursor: pointer;
   padding:.5em 1em;
+  border: 0;
+  padding: .5em;
+  background-color: hsl(0, 83%, 66%);
+  color: white;
+  /* text-transform: capitalize; */
+}
+.bold{
+  font-weight: 700;
+  color: hsl(0, 52%, 13%);
 }
 @media (min-width: 40rem) {
   .ship-flex {

@@ -35,7 +35,7 @@ z-index: 100000;
   }
   .collections{
     position: absolute;
-    background-color: hsl(352, 96%, 54%);
+    background-color: hsl(0, 67% ,49%);
     top: 2rem;
     left: -5rem;
     border-radius: 10px;

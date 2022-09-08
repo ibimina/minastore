@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400&family=Roboto+Condensed&display=swap");
+
 *,
 *::after,
 *::before {
@@ -34,6 +36,14 @@ body,
   font-size: 16px;
   line-height: 2.2em;
   background-color: hsl(0, 100%, 99%);
+ font-family: "Roboto Condensed", sans-serif;
+  /* font-family: "League Spartan", sans-serif; */
+
+}
+p{
+    font-family: "League Spartan", sans-serif;
+    
+    /* font-family: "Roboto Condensed", sans-serif; */
 }
 .sr-only {
   width: 1px;
@@ -106,7 +116,7 @@ nav li a {
 nav li a.active {
   color: palevioletred;
 }
-nav li a:hover{
+nav li a:hover {
   color: hsl(0, 100%, 99%);
 }
 .cart-icon {
