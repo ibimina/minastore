@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/minastore/static/css/main.cb09820a.css",
+    "main.js": "/minastore/static/js/main.95f1e428.js",
+    "static/media/heroo.webp": "/minastore/static/media/heroo.940d64362282ad5b4974.webp",
+    "static/media/icon-delete.svg": "/minastore/static/media/icon-delete.1fd1f1f7d9f8ce5557b4.svg",
+    "index.html": "/minastore/index.html",
+    "static/media/icon-plus.svg": "/minastore/static/media/icon-plus.21608174b04c29368a1e.svg",
+    "static/media/icon-minus.svg": "/minastore/static/media/icon-minus.dd7c27bc1647b3576748.svg",
+    "static/media/icon-close.svg": "/minastore/static/media/icon-close.bbbbb0069bb8a015e779.svg",
+    "static/media/icon-next.svg": "/minastore/static/media/icon-next.9621183a551a9985b4bd.svg",
+    "static/media/icon-hamburger.svg": "/minastore/static/media/icon-hamburger.5153cb809501d4309c23.svg",
+    "static/media/icon-arrow-down.svg": "/minastore/static/media/icon-arrow-down.bebf05132571af33611e.svg",
+    "main.cb09820a.css.map": "/minastore/static/css/main.cb09820a.css.map",
+    "main.95f1e428.js.map": "/minastore/static/js/main.95f1e428.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb09820a.css",
+    "static/js/main.95f1e428.js"
+  ]
+}
