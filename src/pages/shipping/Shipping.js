@@ -97,9 +97,9 @@ export default function Shipping() {
             className="submit-btn"
           />
         </form>
-        <div>
+   
           <Order shippingPrice={shippingPrices} />
-        </div>
+    
       </div>
       <Link to="/carts">back to cart</Link>{" "}
     </div>
