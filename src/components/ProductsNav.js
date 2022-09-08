@@ -14,10 +14,8 @@ export default function ProductsNav({visi,handleVisi}) {
 
   return (
     <div className="pro-list" data-visible={visi}>
-      <button onClick={handleVisi} className="bk">
-        <span className="sr-only">back</span>
-      </button>
-      <h2 className="prod">Products</h2>
+    
+      <h2 className="prod bk">Products</h2>
       {error && <Error/>}
       {isPending && <Loading/>}
       <ul className="collections">
