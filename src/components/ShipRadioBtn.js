@@ -14,6 +14,7 @@ export default function ShipRadioBtn({value,shiptype,days,amount}) {
           onClick={(e) =>
             dispatch({ type: "ADD_SHIPP", payload: e.target.value })
           }
+          className="radio"
           required
         />
         <span>{shiptype}</span>
