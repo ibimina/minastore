@@ -6,6 +6,7 @@ An e-commerce application used to purchase cosmetics from different brands based
 
 95%
 
+
 #### Example:
 
 This project is currently in development. Users can filter products by brands and see visual data representation. Functionality to sort by additional parameters is in progress.
@@ -43,11 +44,11 @@ To Visit App:
 
 A cosmetics e-commerce store that dislpays products and adds items to cart ,displays cart content and checkout
 
-- Why was this project challenging and therefore a really good learning experience?
+- Project challenging and therefore a really good learning experience?
 
 Desiging out the ux/ui of an e-commerce 
 
-I learnt to use some array methods which I havent used like the reduce method
+I learnt to use "find" array method/function
 
 Saving data in using local storage
 
@@ -60,12 +61,11 @@ How to display a sub navigation when an element is click
 
 Manipulating cart data
 
-
 - What tools did you use to implement this project?
  
   Create-react-app
 
   React-router-dom
 
-
+ 
 

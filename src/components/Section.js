@@ -31,7 +31,7 @@ export default function Section({q,title}) {
                 ratings={doc.rating}
                 productid={doc.id}
                 category={doc.category}
-                tag={doc.tag_list.join(",")}
+                tag={doc.tag_list.join(", ")}
               />
             ))}
       </div>

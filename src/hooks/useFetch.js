@@ -22,6 +22,7 @@ export const useFetch = (url) => {
         setError(null);
       } catch (err) {
         if (err.name === "AbortError") {
+          // console.log("Abort error")
         } else {
           setIsPending(false);
           setError("could not fetch");   
