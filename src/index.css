@@ -63,8 +63,7 @@ header {
   top: 0rem;
   z-index: 1000;
   width: 100%;
-  overflow: hidden;
-}
+  }
 .logo {
   color: hsl(0, 5%, 96%);
 }
